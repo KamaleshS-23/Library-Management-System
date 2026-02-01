@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dashboard {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto; /* Add this line */
+    max-height: 100vh; /* Ensure it respects the viewport height */
+  }
+  
+  
+  .sidebar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .menu-item {
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+  }
+  
+  .menu-item.active {
+    background-color: #374151;
+  }
+  
+  .menu-item:hover {
+    background-color: #4b5563;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f3f4f6;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  color: #4b5563;
+}

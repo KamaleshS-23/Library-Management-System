@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #f3f4f6;
+    }
+
+    .dashboard {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #1f2937;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .sidebar-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: white;
+      padding: 10px 0;
+      border-bottom: 1px solid #374151;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .menu-item {
+      background: none;
+      border: none;
+      color: #d1d5db;
+      text-align: left;
+      font-size: 0.95rem;
+      padding: 12px 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .menu-item.active {
+      background-color: #374151;
+      color: white;
+      font-weight: 500;
+    }
+
+    .menu-item:hover {
+      background-color: #4b5563;
+      color: white;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      background-color: #f3f4f6;
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      margin-top: 0;
+      color: #111827;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .section-content {
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border-left-color: #3b82f6;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .dashboard {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+      
+      .sidebar-title {
+        width: 100%;
+      }
+      
+      .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      
+      .menu-item {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+      }
+      
+      .menu-item i {
+        display: none;
+      }
+    }
+
+    /* Back button style */
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #2563eb;
+    }
+
+    .back-button i {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+<div class="dashboard">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="sidebar-title">Library Dashboard</h2>
+    <nav class="menu">
+      <button class="menu-item" data-url="profile.php">
+        <i data-lucide="user"></i> User Profile
+      </button>
+      <button class="menu-item" data-url="search.php">
+        <i data-lucide="search"></i> Search & Browse
+      </button>
+      <button class="menu-item" data-url="borrowed.php">
+        <i data-lucide="archive"></i> Borrowed Books & History
+      </button>
+      <button class="menu-item" data-url="reservation.php">
+        <i data-lucide="bookmark"></i> Book Reservation
+      </button>
+      <button class="menu-item" data-url="fines.php">
+        <i data-lucide="dollar-sign"></i> Fines
+      </button>
+      <button class="menu-item" data-url="notifications.php">
+        <i data-lucide="bell"></i> Notifications
+      </button>
+      <button class="menu-item" data-url="wishlist.php">
+        <i data-lucide="heart"></i> Wishlist
+      </button>
+      <button class="menu-item" data-url="recommendations.php">
+        <i data-lucide="sparkles"></i> Recommendations
+      </button>
+      <button class="menu-item" data-url="reviews.php">
+        <i data-lucide="star"></i> Reviews & Ratings
+      </button>
+      <button class="menu-item" data-url="ebooks.php">
+        <i data-lucide="download"></i> eBooks / PDFs
+      </button>
+      <button class="menu-item" data-url="calendar.php">
+        <i data-lucide="calendar"></i> Events Calendar
+      </button>
+      <button class="menu-item" data-url="chat.php">
+        <i data-lucide="message-circle"></i> Ask Librarian
+      </button>
+      <button class="menu-item" data-url="feedback.php">
+        <i data-lucide="edit"></i> Feedback
+      </button>
+      <button class="menu-item" data-url="settings.php">
+        <i data-lucide="settings"></i> Settings
+      </button>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="card">
+      <div class="card-content">
+        <h2 class="section-title">Welcome to Library Dashboard</h2>
+        <p class="section-content">Select an option from the sidebar to manage your library account, browse books, or access library services.</p>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  // Initialize Lucide icons
+  lucide.createIcons();
+
+  // Book data (will be populated from book.json)
+  let allBooks = [];
+  let filteredBooks = [];
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.menu-item');
+    const mainContent = document.querySelector('.main-content');
+
+    // Function to load content
+    async function loadContent(url) {
+      try {
+        // Show loading state
+        mainContent.innerHTML = `
+          <div class="card">
+            <div class="card-content" style="text-align: center;">
+              <div class="spinner"></div>
+              <p class="section-content">Loading content...</p>
+            </div>
+          </div>
+        `;
+
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error(`Failed to load: ${response.status} ${response.statusText}`);
+        }
+        
+        const content = await response.text();
+        mainContent.innerHTML = content;
+        
+        // Re-initialize Lucide icons for the new content
+        lucide.createIcons();
+        
+        // If we loaded the search page, initialize book search functionality
+        if (url.includes('search.php')) {
+          initializeBookSearch();
+        }
+        
+      } catch (error) {
+        console.error('Error:', error);
+        mainContent.innerHTML = `
+          <div class="card">
+            <div class="card-content">
+              <h2 class="section-title">Error Loading Content</h2>
+              <p class="section-content">${error.message}</p>
+              <button id="reload-btn" style="margin-top: 15px; padding: 8px 16px; 
+                background-color: #3b82f6; color: white; border: none; 
+                border-radius: 4px; cursor: pointer;">
+                Try Again
+              </button>
+            </div>
+          </div>
+        `;
+        
+        document.getElementById('reload-btn').addEventListener('click', () => {
+          loadContent(url);
+        });
+      }
+    }
+
+    // Handle menu item clicks
+    menuItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Remove active class from all items
+        menuItems.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked item
+        this.classList.add('active');
+
+        // Get the URL from data attribute
+        const url = this.getAttribute('data-url');
+        if (url) {
+          // Update browser history
+          history.pushState({ url: url }, '', url);
+          loadContent(url);
+        }
+      });
+    });
+
+    // Handle browser back/forward
+    window.addEventListener('popstate', function(event) {
+      if (event.state?.url) {
+        const url = event.state.url;
+        menuItems.forEach(item => {
+          item.classList.toggle('active', item.getAttribute('data-url') === url);
+        });
+        loadContent(url);
+      }
+    });
+
+    // Load initial content
+    function loadInitialContent() {
+      const path = window.location.pathname.split('/').pop() || 'dashboard.php';
+      const defaultItem = document.querySelector('.menu-item[data-url="dashboard.php"]');
+      let activeItem = defaultItem;
+      
+      // Check if current path matches any menu item
+      document.querySelectorAll('.menu-item').forEach(item => {
+        if (item.getAttribute('data-url') === path) {
+          activeItem = item;
+        }
+      });
+      
+      // Set active state
+      menuItems.forEach(item => item.classList.remove('active'));
+      activeItem.classList.add('active');
+      
+      // Load content
+      loadContent(activeItem.getAttribute('data-url'));
+    }
+
+    // Initialize book search functionality
+    function initializeBookSearch() {
+      // Fetch book data from JSON file
+      fetch('book.json')
+        .then(response => response.json())
+        .then(data => {
+          // Clean the data (remove any empty template objects)
+          allBooks = data.filter(book => book['Book Name'] !== 'Book Name');
+          filteredBooks = [...allBooks];
+          displayBooks();
+        })
+        .catch(error => {
+          console.error('Error loading book data:', error);
+          const booksContainer = document.getElementById('books-container');
+          if (booksContainer) {
+            booksContainer.innerHTML = '<p class="text-red-500">Error loading books. Please try again later.</p>';
+          }
+        });
+
+      // Add event listeners for search functionality if elements exist
+      const searchBtn = document.getElementById('search-btn');
+      const searchInput = document.getElementById('search-input');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const sortSelect = document.getElementById('sort-by');
+      const closeModal = document.getElementById('close-modal');
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', filterBooks);
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('keyup', (e) => {
+          if (e.key === 'Enter') filterBooks();
+        });
+      }
+
+      if (filterBtns) {
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            filterBooks();
+          });
+        });
+      }
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', filterBooks);
+      }
+
+      if (closeModal) {
+        closeModal.addEventListener('click', () => {
+          document.getElementById('book-modal').classList.add('hidden');
+        });
+      }
+    }
+
+    // Function to display books in the grid
+    function displayBooks(page = 1) {
+      const booksContainer = document.getElementById('books-container');
+      const resultsCount = document.getElementById('results-count');
+      const paginationContainer = document.getElementById('pagination-container');
+      const prevPageBtn = document.getElementById('prev-page');
+      const nextPageBtn = document.getElementById('next-page');
+      const pageNumbers = document.getElementById('page-numbers');
+
+      if (!booksContainer || !resultsCount) return;
+
+      const startIndex = (page - 1) * 10;
+      const endIndex = startIndex + 10;
+      const booksToShow = filteredBooks.slice(startIndex, endIndex);
+      
+      // Update results count
+      resultsCount.textContent = filteredBooks.length;
+      
+      // Clear previous books
+      booksContainer.innerHTML = '';
+      
+      if (booksToShow.length === 0) {
+        booksContainer.innerHTML = '<p class="col-span-full text-center text-gray-500 py-8">No books found matching your criteria.</p>';
+        if (paginationContainer) paginationContainer.classList.add('hidden');
+        return;
+      }
+      
+      // Add books to the grid
+      booksToShow.forEach(book => {
+        const bookCard = document.createElement('div');
+        bookCard.className = 'book-card bg-white rounded-lg shadow overflow-hidden';
+        bookCard.innerHTML = `
+          <div class="h-48 flex items-center justify-center bg-gray-100">
+            <img src="${book['Book Front Page URL'] || 'https://via.placeholder.com/150x200?text=No+Cover'}" 
+                 alt="${book['Book Name']}" 
+                 class="book-cover w-full h-full object-contain">
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800 truncate">${book['Book Name']}</h3>
+            <p class="text-sm text-gray-600 truncate">${book['Author']}</p>
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 text-gray-400"></i>
+                <span class="ml-1 text-xs text-gray-600">${book['Published Year']}</span>
+              </div>
+              <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">${book['Genre']}</span>
+            </div>
+            <button class="mt-3 w-full py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition view-details-btn" 
+                    data-book-id="${book['Book Name']}">
+              View Details
+            </button>
+          </div>
+        `;
+        booksContainer.appendChild(bookCard);
+      });
+      
+      // Initialize Lucide icons for new content
+      lucide.createIcons();
+      
+      // Add event listeners to view details buttons
+      document.querySelectorAll('.view-details-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const bookId = this.getAttribute('data-book-id');
+          showBookDetails(bookId);
+        });
+      });
+      
+      // Update pagination if elements exist
+      if (paginationContainer && pageNumbers && prevPageBtn && nextPageBtn) {
+        updatePagination(page);
+      }
+    }
+    
+    // Update pagination controls
+    function updatePagination(page = 1) {
+      const paginationContainer = document.getElementById('pagination-container');
+      const pageNumbers = document.getElementById('page-numbers');
+      const prevPageBtn = document.getElementById('prev-page');
+      const nextPageBtn = document.getElementById('next-page');
+
+      if (!paginationContainer || !pageNumbers) return;
+
+      const totalPages = Math.ceil(filteredBooks.length / 10);
+      
+      if (totalPages <= 1) {
+        paginationContainer.classList.add('hidden');
+        return;
+      }
+      
+      paginationContainer.classList.remove('hidden');
+      pageNumbers.innerHTML = '';
+      
+      // Previous button state
+      prevPageBtn.disabled = page === 1;
+      prevPageBtn.onclick = () => {
+        if (page > 1) displayBooks(page - 1);
+      };
+      
+      // Page numbers
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = `px-3 py-1 border-t border-b border-gray-300 ${i === page ? 'bg-blue-50 text-blue-600' : 'bg-white text-gray-500 hover:bg-gray-50'}`;
+        pageBtn.textContent = i;
+        pageBtn.addEventListener('click', () => displayBooks(i));
+        pageNumbers.appendChild(pageBtn);
+      }
+      
+      // Next button state
+      nextPageBtn.disabled = page === totalPages;
+      nextPageBtn.onclick = () => {
+        if (page < totalPages) displayBooks(page + 1);
+      };
+    }
+    
+    // Filter books based on search and filters
+    function filterBooks() {
+      const searchInput = document.getElementById('search-input');
+      const activeFilter = document.querySelector('.filter-btn.active');
+      const sortSelect = document.getElementById('sort-by');
+
+      if (!searchInput || !activeFilter || !sortSelect) return;
+
+      const searchTerm = searchInput.value.toLowerCase();
+      const filterValue = activeFilter.dataset.filter;
+      const sortValue = sortSelect.value;
+      
+      filteredBooks = allBooks.filter(book => {
+        // Search term matching
+        const matchesSearch = 
+          book['Book Name'].toLowerCase().includes(searchTerm) ||
+          book['Author'].toLowerCase().includes(searchTerm) ||
+          book['Genre'].toLowerCase().includes(searchTerm);
+        
+        // Filter matching
+        let matchesFilter = true;
+        switch (filterValue) {
+          case 'recent':
+            matchesFilter = book['Published Year'] >= 2020;
+            break;
+          case 'cs':
+            matchesFilter = book['Genre'].toLowerCase().includes('computer science');
+            break;
+          case 'programming':
+            matchesFilter = book['Genre'].toLowerCase().includes('programming');
+            break;
+        }
+        
+        return matchesSearch && matchesFilter;
+      });
+      
+      // Sort books
+      switch (sortValue) {
+        case 'title-asc':
+          filteredBooks.sort((a, b) => a['Book Name'].localeCompare(b['Book Name']));
+          break;
+        case 'title-desc':
+          filteredBooks.sort((a, b) => b['Book Name'].localeCompare(a['Book Name']));
+          break;
+        case 'year-desc':
+          filteredBooks.sort((a, b) => b['Published Year'] - a['Published Year']);
+          break;
+        case 'year-asc':
+          filteredBooks.sort((a, b) => a['Published Year'] - b['Published Year']);
+          break;
+        // Default is relevance (original order)
+      }
+      
+      // Reset to first page
+      displayBooks(1);
+    }
+    
+    // Show book details in modal
+    function showBookDetails(bookName) {
+      const book = allBooks.find(b => b['Book Name'] === bookName);
+      if (!book) return;
+      
+      // Set the book ID in the reservation form
+      const reserveForm = document.getElementById('reservation-form');
+      if (reserveForm) {
+        document.getElementById('reserve-book-id').value = book['Book Name'];
+        reserveForm.onsubmit = submitReservation;
+      }
+      
+      document.getElementById('modal-title').textContent = book['Book Name'];
+      document.getElementById('modal-author').textContent = book['Author'];
+      document.getElementById('modal-year').textContent = book['Published Year'];
+      document.getElementById('modal-edition').textContent = book['Edition'] || '1st';
+      document.getElementById('modal-genre').textContent = book['Genre'];
+      
+      const coverImg = document.getElementById('modal-cover');
+      coverImg.src = book['Book Front Page URL'] || 'https://via.placeholder.com/300x450?text=No+Cover';
+      coverImg.alt = book['Book Name'];
+      
+      // Clear previous genres
+      const genresContainer = document.getElementById('modal-genres');
+      if (genresContainer) {
+        genresContainer.innerHTML = '';
+        
+        // Add genre tags (could be expanded to include multiple genres)
+        const genreTag = document.createElement('span');
+        genreTag.className = 'genre-tag px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded';
+        genreTag.textContent = book['Genre'];
+        genresContainer.appendChild(genreTag);
+      }
+      
+      document.getElementById('book-modal').classList.remove('hidden');
+    }
+    
+    // Function to handle reservation form submission
+    async function submitReservation(event) {
+      event.preventDefault();
+      
+      const form = event.target;
+      const formData = new FormData(form);
+      
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData
+        });
+        
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        
+        const result = await response.text();
+        
+        // Close the modal
+        document.getElementById('book-modal').classList.add('hidden');
+        
+        // Show success message (you might want to implement a better notification system)
+        alert('Book reserved successfully!');
+        
+        // Optionally refresh the page to show updated reservation status
+        window.location.reload();
+        
+      } catch (error) {
+        console.error('Error:', error);
+        alert('There was an error processing your reservation.');
+      }
+    }
+
+    // Initialize
+    loadInitialContent();
+  });
+</script>
+</body>
+</html>

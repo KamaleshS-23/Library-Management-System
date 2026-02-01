@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/197/197717.png" alt="Library Logo" />
+        </div>
+
+        <div class="header">
+            <div class="header-top">
+                <h1>Library Management System</h1>
+                <a href="owner_login.html" class="owner-icon-link" title="Owner Login">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <p>Access your account or register as a new member</p>
+        </div>
+
+        <!-- Login Tabs -->
+        <div class="login-tabs">
+            <div class="tab tab-user active" data-tab="user">User Login</div>
+            <div class="tab tab-admin" data-tab="admin">Admin Login</div>
+        </div>
+
+        <!-- User Login Form -->
+        <form id="userLoginForm" class="login-form active">
+            <div class="form-group">
+                <label for="userUsername">Username</label>
+                <input type="text" id="userUsername" placeholder="Enter your username" required />
+                <div class="error-message" id="userUsernameError">Username must be at least 3 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="userPassword">Password</label>
+                <input type="password" id="userPassword" placeholder="Enter your password" required />
+                <div class="error-message" id="userPasswordError">Password must be at least 6 characters</div>
+            </div>
+
+            <button type="submit" class="login-button" id="userLoginButton">Login as User</button>
+
+            <div class="toggle-register">
+                Don't have an account? <a id="showUserRegister">Register here</a>
+            </div>
+        </form>
+
+        <!-- Admin Login Form -->
+        <form id="adminLoginForm" class="login-form">
+            <div class="form-group">
+                <label for="adminUsername">Username</label>
+                <input type="text" id="adminUsername" placeholder="Enter admin username" required />
+                <div class="error-message" id="adminUsernameError">Username must be at least 3 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input type="password" id="adminPassword" placeholder="Enter admin password" required />
+                <div class="error-message" id="adminPasswordError">Password must be at least 6 characters</div>
+            </div>
+
+            <button type="submit" class="login-button" id="adminLoginButton">Login as Admin</button>
+
+            <div class="toggle-register">
+                Need an admin account? <a id="showAdminRegister">Request access</a>
+            </div>
+        </form>
+
+        <!-- User Registration Form -->
+        <div id="userRegisterSection" class="register-section">
+            <div class="register-title">User Registration</div>
+            <form id="userRegisterForm">
+                <div class="form-group">
+                    <label for="userRegName">Full Name</label>
+                    <input type="text" id="userRegName" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="userRegEmail">Email</label>
+                    <input type="email" id="userRegEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="userRegUsername">Username</label>
+                    <input type="text" id="userRegUsername" placeholder="Choose a username" required />
+                </div>
+                <div class="form-group">
+                    <label for="userRegPassword">Password</label>
+                    <input type="password" id="userRegPassword" placeholder="Create a password" required />
+                </div>
+                <div class="form-group">
+                    <label for="userRegConfirmPassword">Confirm Password</label>
+                    <input type="password" id="userRegConfirmPassword" placeholder="Confirm your password" required />
+                </div>
+                <button type="submit" class="register-button">Register as User</button>
+            </form>
+
+            <div class="toggle-register">
+                Already have an account? <a class="show-login" data-tab="user">Login here</a>
+            </div>
+        </div>
+
+        <!-- Admin Registration Form -->
+        <div id="adminRegisterSection" class="register-section">
+            <div class="register-title">Admin Access Request</div>
+            <form id="adminRegisterForm">
+                <div class="form-group">
+                    <label for="adminRegName">Full Name</label>
+                    <input type="text" id="adminRegName" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="adminRegEmail">Email</label>
+                    <input type="email" id="adminRegEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="adminRegPosition">Position</label>
+                    <input type="text" id="adminRegPosition" placeholder="Your position in the library" required />
+                </div>
+                <div class="form-group">
+                    <label for="adminRegReason">Reason for Access</label>
+                    <textarea id="adminRegReason" placeholder="Explain why you need admin access" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="register-button">Request Admin Access</button>
+            </form>
+
+            <div class="toggle-register">
+                Already have an account? <a class="show-login" data-tab="admin">Login here</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

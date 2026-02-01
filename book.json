@@ -1,0 +1,834 @@
+[
+  {
+    "Book Name": "Data Structures and Algorithms",
+    "Genre": "Computer Science",
+    "Published Year": 2018,
+    "Edition": "3rd",
+    "Author": "Mark Allen Weiss",
+    "Book Front Page URL": "https://example.com/dsa_front.jpg"
+  },
+  {
+    "Book Name": "Introduction to Algorithms",
+    "Genre": "Computer Science",
+    "Published Year": 2020,
+    "Edition": "4th",
+    "Author": "Thomas H. Cormen",
+    "Book Front Page URL": "https://example.com/intro_algorithms.jpg"
+  },
+  {
+    "Book Name": "Operating Systems: Design and Implementation",
+    "Genre": "Operating Systems",
+    "Published Year": 2019,
+    "Edition": "2nd",
+    "Author": "Andrew S. Tanenbaum",
+    "Book Front Page URL": "https://example.com/os_design_implementation.jpg"
+  },
+  {
+    "Book Name": "Database Management Systems",
+    "Genre": "Database",
+    "Published Year": 2017,
+    "Edition": "5th",
+    "Author": "Raghu Ramakrishnan",
+    "Book Front Page URL": "https://example.com/dbms_front.jpg"
+  },
+  {
+    "Book Name": "Computer Networks",
+    "Genre": "Computer Science",
+    "Published Year": 2021,
+    "Edition": "6th",
+    "Author": "Andrew S. Tanenbaum",
+    "Book Front Page URL": "https://example.com/computer_networks.jpg"
+  },
+  {
+    "Book Name": "Discrete Mathematics",
+    "Genre": "Mathematics",
+    "Published Year": 2016,
+    "Edition": "1st",
+    "Author": "Kenneth H. Rosen",
+    "Book Front Page URL": "https://example.com/discrete_math.jpg"
+  },
+  {
+    "Book Name": "Data Mining: Concepts and Techniques",
+    "Genre": "Data Science",
+    "Published Year": 2022,
+    "Edition": "3rd",
+    "Author": "Jiawei Han",
+    "Book Front Page URL": "https://example.com/data_mining.jpg"
+  },
+  {
+    "Book Name": "Artificial Intelligence: A Modern Approach",
+    "Genre": "AI",
+    "Published Year": 2018,
+    "Edition": "4th",
+    "Author": "Stuart Russell",
+    "Book Front Page URL": "https://example.com/ai_modern_approach.jpg"
+  },
+  {
+    "Book Name": "Fundamentals of Database Systems",
+    "Genre": "Database",
+    "Published Year": 2020,
+    "Edition": "7th",
+    "Author": "Ramez Elmasri",
+    "Book Front Page URL": "https://example.com/fundamentals_dbms.jpg"
+  },
+  {
+    "Book Name": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "Genre": "Software Engineering",
+    "Published Year": 2015,
+    "Edition": "2nd",
+    "Author": "Erich Gamma",
+    "Book Front Page URL": "https://example.com/design_patterns.jpg"
+  },
+  {
+    "Book Name": "Book Name",
+    "Genre": "Genre",
+    "Published Year": "Published Year",
+    "Edition": "Edition",
+    "Author": "Author",
+    "Book Front Page URL": "Book Front Page URL"
+  },
+  {
+    "Book Name": "Clean Code",
+    "Genre": "Software Engineering",
+    "Published Year": 2008,
+    "Edition": "1st",
+    "Author": "Robert C. Martin",
+    "Book Front Page URL": "https://example.com/clean_code.jpg"
+  },
+  {
+    "Book Name": "The Pragmatic Programmer",
+    "Genre": "Software Engineering",
+    "Published Year": 2019,
+    "Edition": "2nd",
+    "Author": "Andrew Hunt",
+    "Book Front Page URL": "https://example.com/pragmatic_programmer.jpg"
+  },
+  {
+    "Book Name": "Head First Java",
+    "Genre": "Programming",
+    "Published Year": 2022,
+    "Edition": "3rd",
+    "Author": "Kathy Sierra",
+    "Book Front Page URL": "https://example.com/head_first_java.jpg"
+  },
+  {
+    "Book Name": "Java: The Complete Reference",
+    "Genre": "Programming",
+    "Published Year": 2021,
+    "Edition": "11th",
+    "Author": "Herbert Schildt",
+    "Book Front Page URL": "https://example.com/java_complete_reference.jpg"
+  },
+  {
+    "Book Name": "Python Crash Course",
+    "Genre": "Programming",
+    "Published Year": 2019,
+    "Edition": "2nd",
+    "Author": "Eric Matthes",
+    "Book Front Page URL": "https://example.com/python_crash_course.jpg"
+  },
+  {
+    "Book Name": "Fluent Python",
+    "Genre": "Programming",
+    "Published Year": 2020,
+    "Edition": "2nd",
+    "Author": "Luciano Ramalho",
+    "Book Front Page URL": "https://example.com/fluent_python.jpg"
+  },
+  {
+    "Book Name": "Effective Java",
+    "Genre": "Programming",
+    "Published Year": 2018,
+    "Edition": "3rd",
+    "Author": "Joshua Bloch",
+    "Book Front Page URL": "https://example.com/effective_java.jpg"
+  },
+  {
+    "Book Name": "Structure and Interpretation of Computer Programs",
+    "Genre": "Programming",
+    "Published Year": 2022,
+    "Edition": "2nd",
+    "Author": "Harold Abelson",
+    "Book Front Page URL": "https://example.com/sicp.jpg"
+  },
+  {
+    "Book Name": "Modern Operating Systems",
+    "Genre": "Operating Systems",
+    "Published Year": 2023,
+    "Edition": "5th",
+    "Author": "Andrew S. Tanenbaum",
+    "Book Front Page URL": "https://example.com/modern_os.jpg"
+  },
+  {
+    "Book Name": "Operating System Concepts",
+    "Genre": "Operating Systems",
+    "Published Year": 2021,
+    "Edition": "10th",
+    "Author": "Abraham Silberschatz",
+    "Book Front Page URL": "https://example.com/os_concepts.jpg"
+  },
+  {
+    "Book Name": "Computer Organization and Design",
+    "Genre": "Computer Architecture",
+    "Published Year": 2021,
+    "Edition": "5th",
+    "Author": "David A. Patterson",
+    "Book Front Page URL": "https://example.com/comp_org_design.jpg"
+  },
+  {
+    "Book Name": "Cryptography and Network Security",
+    "Genre": "Cybersecurity",
+    "Published Year": 2017,
+    "Edition": "6th",
+    "Author": "William Stallings",
+    "Book Front Page URL": "https://example.com/crypto_netsec.jpg"
+  },
+  {
+    "Book Name": "Introduction to Machine Learning",
+    "Genre": "AI",
+    "Published Year": 2020,
+    "Edition": "4th",
+    "Author": "Ethem Alpaydin",
+    "Book Front Page URL": "https://example.com/ml_intro.jpg"
+  },
+  {
+    "Book Name": "Deep Learning",
+    "Genre": "AI",
+    "Published Year": 2016,
+    "Edition": "1st",
+    "Author": "Ian Goodfellow",
+    "Book Front Page URL": "https://example.com/deep_learning.jpg"
+  },
+  {
+    "Book Name": "Reinforcement Learning: An Introduction",
+    "Genre": "AI",
+    "Published Year": 2018,
+    "Edition": "2nd",
+    "Author": "Richard S. Sutton",
+    "Book Front Page URL": "https://example.com/rl_intro.jpg"
+  },
+  {
+    "Book Name": "Data Science from Scratch",
+    "Genre": "Data Science",
+    "Published Year": 2019,
+    "Edition": "2nd",
+    "Author": "Joel Grus",
+    "Book Front Page URL": "https://example.com/data_science_scratch.jpg"
+  },
+  {
+    "Book Name": "Big Data: Principles and Paradigms",
+    "Genre": "Data Science",
+    "Published Year": 2021,
+    "Edition": "1st",
+    "Author": "Rajkumar Buyya",
+    "Book Front Page URL": "https://example.com/big_data.jpg"
+  },
+  {
+    "Book Name": "Agile Software Development",
+    "Genre": "Software Engineering",
+    "Published Year": 2015,
+    "Edition": "1st",
+    "Author": "Robert C. Martin",
+    "Book Front Page URL": "https://example.com/agile_dev.jpg"
+  },
+  {
+    "Book Name": "Software Engineering",
+    "Genre": "Software Engineering",
+    "Published Year": 2020,
+    "Edition": "10th",
+    "Author": "Ian Sommerville",
+    "Book Front Page URL": "https://example.com/software_engineering.jpg"
+  },
+  {
+    "Book Name": "The C Programming Language",
+    "Genre": "Programming",
+    "Published Year": 1988,
+    "Edition": "2nd",
+    "Author": "Brian W. Kernighan",
+    "Book Front Page URL": "https://example.com/c_language.jpg"
+  },
+  {
+    "Book Name": "Beginning JavaScript",
+    "Genre": "Web Development",
+    "Published Year": 2021,
+    "Edition": "6th",
+    "Author": "Paul Wilton",
+    "Book Front Page URL": "https://example.com/beginning_js.jpg"
+  },
+  {
+    "Book Name": "HTML and CSS: Design and Build Websites",
+    "Genre": "Web Development",
+    "Published Year": 2011,
+    "Edition": "1st",
+    "Author": "Jon Duckett",
+    "Book Front Page URL": "https://example.com/html_css.jpg"
+  },
+  {
+    "Book Name": "Computer Graphics: Principles and Practice",
+    "Genre": "Graphics",
+    "Published Year": 2013,
+    "Edition": "3rd",
+    "Author": "John F. Hughes",
+    "Book Front Page URL": "https://example.com/comp_graphics.jpg"
+  },
+  {
+    "Book Name": "Compiler Design",
+    "Genre": "Computer Science",
+    "Published Year": 2022,
+    "Edition": "2nd",
+    "Author": "Alfred V. Aho",
+    "Book Front Page URL": "https://example.com/compiler_design.jpg"
+  },
+  {
+    "Book Name": "Unix Concepts and Applications",
+    "Genre": "Operating Systems",
+    "Published Year": 2003,
+    "Edition": "4th",
+    "Author": "Sumitabha Das",
+    "Book Front Page URL": "https://example.com/unix_concepts.jpg"
+  },
+  {
+    "Book Name": "Book Name",
+    "Genre": "Genre",
+    "Published Year": "Published Year",
+    "Edition": "Edition",
+    "Author": "Author",
+    "Book Front Page URL": "Book Front Page URL"
+  },
+  {
+    "Book Name": "Cloud Computing: Concepts, Technology & Architecture",
+    "Genre": "Cloud Computing",
+    "Published Year": 2013,
+    "Edition": "1st",
+    "Author": "Thomas Erl",
+    "Book Front Page URL": "https://example.com/cloud_computing.jpg"
+  },
+  {
+    "Book Name": "Blockchain Basics",
+    "Genre": "Blockchain",
+    "Published Year": 2018,
+    "Edition": "1st",
+    "Author": "Daniel Drescher",
+    "Book Front Page URL": "https://example.com/blockchain_basics.jpg"
+  },
+  {
+    "Book Name": "Mastering Blockchain",
+    "Genre": "Blockchain",
+    "Published Year": 2021,
+    "Edition": "3rd",
+    "Author": "Imran Bashir",
+    "Book Front Page URL": "https://example.com/mastering_blockchain.jpg"
+  },
+  {
+    "Book Name": "Introduction to Automata Theory, Languages, and Computation",
+    "Genre": "Theory of Computation",
+    "Published Year": 2006,
+    "Edition": "3rd",
+    "Author": "John E. Hopcroft",
+    "Book Front Page URL": "https://example.com/automata_theory.jpg"
+  },
+  {
+    "Book Name": "Artificial Intelligence",
+    "Genre": "AI",
+    "Published Year": 2020,
+    "Edition": "3rd",
+    "Author": "Elaine Rich",
+    "Book Front Page URL": "https://example.com/ai_rich.jpg"
+  },
+  {
+    "Book Name": "Learning PHP, MySQL & JavaScript",
+    "Genre": "Web Development",
+    "Published Year": 2022,
+    "Edition": "6th",
+    "Author": "Robin Nixon",
+    "Book Front Page URL": "https://example.com/php_mysql_js.jpg"
+  },
+  {
+    "Book Name": "Pro Git",
+    "Genre": "Software Tools",
+    "Published Year": 2014,
+    "Edition": "2nd",
+    "Author": "Scott Chacon",
+    "Book Front Page URL": "https://example.com/pro_git.jpg"
+  },
+  {
+    "Book Name": "Linux Command Line and Shell Scripting Bible",
+    "Genre": "Operating Systems",
+    "Published Year": 2021,
+    "Edition": "4th",
+    "Author": "Richard Blum",
+    "Book Front Page URL": "https://example.com/linux_shell.jpg"
+  },
+  {
+    "Book Name": "Microprocessor Architecture, Programming and Applications",
+    "Genre": "Computer Architecture",
+    "Published Year": 2002,
+    "Edition": "5th",
+    "Author": "Ramesh S. Gaonkar",
+    "Book Front Page URL": "https://example.com/microprocessor_gaonkar.jpg"
+  },
+  {
+    "Book Name": "Computer Vision: Algorithms and Applications",
+    "Genre": "Computer Vision",
+    "Published Year": 2020,
+    "Edition": "2nd",
+    "Author": "Richard Szeliski",
+    "Book Front Page URL": "https://example.com/computer_vision.jpg"
+  },
+  {
+    "Book Name": "Computer System Architecture",
+    "Genre": "Computer Architecture",
+    "Published Year": 2007,
+    "Edition": "3rd",
+    "Author": "Morris Mano",
+    "Book Front Page URL": "https://example.com/system_architecture.jpg"
+  },
+  {
+    "Book Name": "Internet of Things: A Hands-On-Approach",
+    "Genre": "IoT",
+    "Published Year": 2014,
+    "Edition": "1st",
+    "Author": "Arshdeep Bahga",
+    "Book Front Page URL": "https://example.com/iot_hands_on.jpg"
+  },
+  {
+    "Book Name": "Professional Android Development",
+    "Genre": "Mobile Development",
+    "Published Year": 2018,
+    "Edition": "5th",
+    "Author": "Reto Meier",
+    "Book Front Page URL": "https://example.com/android_dev.jpg"
+  },
+  {
+    "Book Name": "Learning React",
+    "Genre": "Web Development",
+    "Published Year": 2022,
+    "Edition": "5th",
+    "Author": "Alex Banks",
+    "Book Front Page URL": "https://example.com/learning_react.jpg"
+  },
+  {
+    "Book Name": "Vue.js Up and Running",
+    "Genre": "Web Development",
+    "Published Year": 2018,
+    "Edition": "1st",
+    "Author": "Callum Macrae",
+    "Book Front Page URL": "https://example.com/vue_up.jpg"
+  },
+  {
+    "Book Name": "Learning Web Design",
+    "Genre": "Web Development",
+    "Published Year": 2018,
+    "Edition": "5th",
+    "Author": "Jennifer Niederst Robbins",
+    "Book Front Page URL": "https://example.com/web_design.jpg"
+  },
+  {
+    "Book Name": "Network Security Essentials",
+    "Genre": "Cybersecurity",
+    "Published Year": 2013,
+    "Edition": "4th",
+    "Author": "William Stallings",
+    "Book Front Page URL": "https://example.com/netsec_essentials.jpg"
+  },
+  {
+    "Book Name": "Introduction to the Theory of Computation",
+    "Genre": "Theory of Computation",
+    "Published Year": 2006,
+    "Edition": "2nd",
+    "Author": "Michael Sipser",
+    "Book Front Page URL": "https://example.com/theory_computation.jpg"
+  },
+  {
+    "Book Name": "Beginning Ethical Hacking with Kali Linux",
+    "Genre": "Cybersecurity",
+    "Published Year": 2021,
+    "Edition": "1st",
+    "Author": "Patrick Engebretson",
+    "Book Front Page URL": "https://example.com/ethical_hacking.jpg"
+  },
+  {
+    "Book Name": "Agile Estimating and Planning",
+    "Genre": "Project Management",
+    "Published Year": 2005,
+    "Edition": "1st",
+    "Author": "Mike Cohn",
+    "Book Front Page URL": "https://example.com/agile_planning.jpg"
+  },
+  {
+    "Book Name": "Managing Software Requirements",
+    "Genre": "Project Management",
+    "Published Year": 2003,
+    "Edition": "2nd",
+    "Author": "Dean Leffingwell",
+    "Book Front Page URL": "https://example.com/software_requirements.jpg"
+  },
+  {
+    "Book Name": "Essentials of Software Engineering",
+    "Genre": "Software Engineering",
+    "Published Year": 2020,
+    "Edition": "4th",
+    "Author": "Frank Tsui",
+    "Book Front Page URL": "https://example.com/essentials_se.jpg"
+  },
+  {
+    "Book Name": "User Interface Design and Evaluation",
+    "Genre": "UI/UX",
+    "Published Year": 2005,
+    "Edition": "1st",
+    "Author": "Debbie Stone",
+    "Book Front Page URL": "https://example.com/ui_design.jpg"
+  },
+  {
+    "Book Name": "Don't Make Me Think",
+    "Genre": "UI/UX",
+    "Published Year": 2014,
+    "Edition": "2nd",
+    "Author": "Steve Krug",
+    "Book Front Page URL": "https://example.com/dont_make_me_think.jpg"
+  },
+  {
+    "Book Name": "Designing Data-Intensive Applications",
+    "Genre": "Software Architecture",
+    "Published Year": 2017,
+    "Edition": "1st",
+    "Author": "Martin Kleppmann",
+    "Book Front Page URL": "https://example.com/data_intensive.jpg"
+  },
+  {
+    "Book Name": "Book Name",
+    "Genre": "Genre",
+    "Published Year": "Published Year",
+    "Edition": "Edition",
+    "Author": "Author",
+    "Book Front Page URL": "Book Front Page URL"
+  },
+  {
+    "Book Name": "Introduction to Embedded Systems",
+    "Genre": "Embedded Systems",
+    "Published Year": 2010,
+    "Edition": "1st",
+    "Author": "Shibu K.V.",
+    "Book Front Page URL": "https://example.com/embedded_systems.jpg"
+  },
+  {
+    "Book Name": "Programming Embedded Systems",
+    "Genre": "Embedded Systems",
+    "Published Year": 2006,
+    "Edition": "2nd",
+    "Author": "Michael Barr",
+    "Book Front Page URL": "https://example.com/programming_embedded.jpg"
+  },
+  {
+    "Book Name": "Digital Logic and Computer Design",
+    "Genre": "Computer Architecture",
+    "Published Year": 1972,
+    "Edition": "1st",
+    "Author": "Morris Mano",
+    "Book Front Page URL": "https://example.com/digital_logic.jpg"
+  },
+  {
+    "Book Name": "Digital Design",
+    "Genre": "Computer Architecture",
+    "Published Year": 2017,
+    "Edition": "5th",
+    "Author": "Morris Mano",
+    "Book Front Page URL": "https://example.com/digital_design.jpg"
+  },
+  {
+    "Book Name": "Computer Fundamentals",
+    "Genre": "Basics",
+    "Published Year": 2004,
+    "Edition": "6th",
+    "Author": "P.K. Sinha",
+    "Book Front Page URL": "https://example.com/computer_fundamentals.jpg"
+  },
+  {
+    "Book Name": "Fundamentals of Computer Algorithms",
+    "Genre": "Algorithms",
+    "Published Year": 2011,
+    "Edition": "2nd",
+    "Author": "Horowitz",
+    "Book Front Page URL": "Sahni"
+  },
+  {
+    "Book Name": "Object-Oriented Analysis and Design",
+    "Genre": "Software Engineering",
+    "Published Year": 2013,
+    "Edition": "3rd",
+    "Author": "Grady Booch",
+    "Book Front Page URL": "https://example.com/ooad_booch.jpg"
+  },
+  {
+    "Book Name": "Python for Data Analysis",
+    "Genre": "Data Science",
+    "Published Year": 2017,
+    "Edition": "2nd",
+    "Author": "Wes McKinney",
+    "Book Front Page URL": "https://example.com/python_data_analysis.jpg"
+  },
+  {
+    "Book Name": "Learning SQL",
+    "Genre": "Database",
+    "Published Year": 2020,
+    "Edition": "3rd",
+    "Author": "Alan Beaulieu",
+    "Book Front Page URL": "https://example.com/learning_sql.jpg"
+  },
+  {
+    "Book Name": "NoSQL Distilled",
+    "Genre": "Database",
+    "Published Year": 2012,
+    "Edition": "1st",
+    "Author": "Pramod J. Sadalage",
+    "Book Front Page URL": "https://example.com/nosql_distilled.jpg"
+  },
+  {
+    "Book Name": "MongoDB: The Definitive Guide",
+    "Genre": "Database",
+    "Published Year": 2019,
+    "Edition": "3rd",
+    "Author": "Kristina Chodorow",
+    "Book Front Page URL": "https://example.com/mongodb_guide.jpg"
+  },
+  {
+    "Book Name": "Learning MySQL",
+    "Genre": "Database",
+    "Published Year": 2007,
+    "Edition": "1st",
+    "Author": "Seyed M.M. Tahaghoghi",
+    "Book Front Page URL": "https://example.com/learning_mysql.jpg"
+  },
+  {
+    "Book Name": "Computer Science Illuminated",
+    "Genre": "Computer Science",
+    "Published Year": 2020,
+    "Edition": "7th",
+    "Author": "Nell Dale",
+    "Book Front Page URL": "https://example.com/cs_illuminated.jpg"
+  },
+  {
+    "Book Name": "Head First Design Patterns",
+    "Genre": "Software Engineering",
+    "Published Year": 2020,
+    "Edition": "2nd",
+    "Author": "Eric Freeman",
+    "Book Front Page URL": "https://example.com/headfirst_design.jpg"
+  },
+  {
+    "Book Name": "Data Visualization with Python",
+    "Genre": "Data Science",
+    "Published Year": 2021,
+    "Edition": "1st",
+    "Author": "Igor Milovanovic",
+    "Book Front Page URL": "https://example.com/data_viz_python.jpg"
+  },
+  {
+    "Book Name": "Mastering Python",
+    "Genre": "Programming",
+    "Published Year": 2022,
+    "Edition": "2nd",
+    "Author": "Rick van Hattem",
+    "Book Front Page URL": "https://example.com/mastering_python.jpg"
+  },
+  {
+    "Book Name": "Linux Pocket Guide",
+    "Genre": "Operating Systems",
+    "Published Year": 2022,
+    "Edition": "4th",
+    "Author": "Daniel J. Barrett",
+    "Book Front Page URL": "https://example.com/linux_pocket_guide.jpg"
+  },
+  {
+    "Book Name": "Learning Docker",
+    "Genre": "DevOps",
+    "Published Year": 2020,
+    "Edition": "2nd",
+    "Author": "Pethuru Raj",
+    "Book Front Page URL": "https://example.com/learning_docker.jpg"
+  },
+  {
+    "Book Name": "Kubernetes Up & Running",
+    "Genre": "DevOps",
+    "Published Year": 2022,
+    "Edition": "3rd",
+    "Author": "Brendan Burns",
+    "Book Front Page URL": "https://example.com/kubernetes_up.jpg"
+  },
+  {
+    "Book Name": "Learning DevOps",
+    "Genre": "DevOps",
+    "Published Year": 2021,
+    "Edition": "1st",
+    "Author": "Mikael Krief",
+    "Book Front Page URL": "https://example.com/learning_devops.jpg"
+  },
+  {
+    "Book Name": "Software Testing Principles and Practices",
+    "Genre": "Software Engineering",
+    "Published Year": 2007,
+    "Edition": "1st",
+    "Author": "Srinivasan Desikan",
+    "Book Front Page URL": "https://example.com/software_testing.jpg"
+  },
+  {
+    "Book Name": "Introduction to Information Retrieval",
+    "Genre": "Information Retrieval",
+    "Published Year": 2008,
+    "Edition": "1st",
+    "Author": "Christopher D. Manning",
+    "Book Front Page URL": "https://example.com/information_retrieval.jpg"
+  },
+  {
+    "Book Name": "Speech and Language Processing",
+    "Genre": "NLP",
+    "Published Year": 2022,
+    "Edition": "3rd",
+    "Author": "Daniel Jurafsky",
+    "Book Front Page URL": "https://example.com/speech_language.jpg"
+  },
+  {
+    "Book Name": "NLP with Python",
+    "Genre": "NLP",
+    "Published Year": 2015,
+    "Edition": "1st",
+    "Author": "Steven Bird",
+    "Book Front Page URL": "https://example.com/nlp_python.jpg"
+  },
+  {
+    "Book Name": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+    "Genre": "AI",
+    "Published Year": 2022,
+    "Edition": "3rd",
+    "Author": "Aurélien Géron",
+    "Book Front Page URL": "https://example.com/hands_on_ml.jpg"
+  },
+  {
+    "Book Name": "Principles of Compiler Design",
+    "Genre": "Compilers",
+    "Published Year": 1977,
+    "Edition": "1st",
+    "Author": "Alfred V. Aho",
+    "Book Front Page URL": "https://example.com/dragon_book.jpg"
+  },
+  {
+    "Book Name": "Programming in ANSI C",
+    "Genre": "Programming",
+    "Published Year": 2019,
+    "Edition": "8th",
+    "Author": "E. Balagurusamy",
+    "Book Front Page URL": "https://example.com/ansi_c.jpg"
+  },
+  {
+    "Book Name": "Let Us C",
+    "Genre": "Programming",
+    "Published Year": 2017,
+    "Edition": "16th",
+    "Author": "Yashavant Kanetkar",
+    "Book Front Page URL": "https://example.com/let_us_c.jpg"
+  },
+  {
+    "Book Name": "Let Us Python",
+    "Genre": "Programming",
+    "Published Year": 2021,
+    "Edition": "2nd",
+    "Author": "Yashavant Kanetkar",
+    "Book Front Page URL": "https://example.com/let_us_python.jpg"
+  },
+  {
+    "Book Name": "Object Oriented Programming with C++",
+    "Genre": "Programming",
+    "Published Year": 2011,
+    "Edition": "6th",
+    "Author": "E. Balagurusamy",
+    "Book Front Page URL": "https://example.com/oop_cpp.jpg"
+  },
+  {
+    "Book Name": "Java How to Program",
+    "Genre": "Programming",
+    "Published Year": 2017,
+    "Edition": "10th",
+    "Author": "Paul Deitel",
+    "Book Front Page URL": "https://example.com/java_htp.jpg"
+  },
+  {
+    "Book Name": "Head First Android Development",
+    "Genre": "Mobile Development",
+    "Published Year": 2017,
+    "Edition": "2nd",
+    "Author": "Dawn Griffiths",
+    "Book Front Page URL": "https://example.com/hf_android.jpg"
+  },
+  {
+    "Book Name": "iOS Programming: The Big Nerd Ranch Guide",
+    "Genre": "Mobile Development",
+    "Published Year": 2020,
+    "Edition": "7th",
+    "Author": "Christian Keur",
+    "Book Front Page URL": "https://example.com/ios_programming.jpg"
+  },
+  {
+    "Book Name": "Algorithms Unlocked",
+    "Genre": "Algorithms",
+    "Published Year": 2013,
+    "Edition": "1st",
+    "Author": "Thomas H. Cormen",
+    "Book Front Page URL": "https://example.com/algorithms_unlocked.jpg"
+  },
+  {
+    "Book Name": "The Algorithm Design Manual",
+    "Genre": "Algorithms",
+    "Published Year": 2020,
+    "Edition": "3rd",
+    "Author": "Steven S. Skiena",
+    "Book Front Page URL": "https://example.com/algorithm_design.jpg"
+  },
+  {
+    "Book Name": "Hands-On Data Structures and Algorithms with Python",
+    "Genre": "DSA",
+    "Published Year": 2020,
+    "Edition": "2nd",
+    "Author": "Dr. Basant Agarwal",
+    "Book Front Page URL": "https://example.com/hands_on_dsa.jpg"
+  },
+  {
+    "Book Name": "Building Microservices",
+    "Genre": "Software Architecture",
+    "Published Year": 2015,
+    "Edition": "1st",
+    "Author": "Sam Newman",
+    "Book Front Page URL": "https://example.com/microservices_book.jpg"
+  },
+  {
+    "Book Name": "Software Architecture in Practice",
+    "Genre": "Software Architecture",
+    "Published Year": 2020,
+    "Edition": "4th",
+    "Author": "Len Bass",
+    "Book Front Page URL": "https://example.com/architecture_practice.jpg"
+  },
+  {
+    "Book Name": "Security Engineering",
+    "Genre": "Cybersecurity",
+    "Published Year": 2020,
+    "Edition": "3rd",
+    "Author": "Ross Anderson",
+    "Book Front Page URL": "https://example.com/security_engineering.jpg"
+  },
+  {
+    "Book Name": "Hacking: The Art of Exploitation",
+    "Genre": "Cybersecurity",
+    "Published Year": 2008,
+    "Edition": "2nd",
+    "Author": "Jon Erickson",
+    "Book Front Page URL": "https://example.com/hacking_art.jpg"
+  },
+  {
+    "Book Name": "Gray Hat Hacking",
+    "Genre": "Cybersecurity",
+    "Published Year": 2022,
+    "Edition": "6th",
+    "Author": "Allen Harper",
+    "Book Front Page URL": "https://example.com/gray_hat.jpg"
+  }
+]

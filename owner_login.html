@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/197/197717.png" alt="Library Logo">
+        </div>
+        
+        <div class="header">
+            <h1>Library Owner Login</h1>
+        </div>
+        
+        <form id="ownerLoginForm">
+            <div class="form-group">
+                <label for="ownerUsername">Username</label>
+                <input type="text" id="ownerUsername" placeholder="Owner username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="ownerPassword">Password</label>
+                <input type="password" id="ownerPassword" placeholder="Owner password" required>
+            </div>
+            
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('ownerLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('ownerUsername').value;
+            const password = document.getElementById('ownerPassword').value;
+            
+            fetch('owner_login.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.href = 'owner_dashboard.php';
+                } else {
+                    alert(data.message || 'Login failed');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
